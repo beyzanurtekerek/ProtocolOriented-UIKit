@@ -30,24 +30,40 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		D8473FBE2CB87A6D0073D9B6 /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKit" target */ = {
+		D86D44DB2CB9B6070078CA2A /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKit" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				"/Localized: LaunchScreen.storyboard",
+				AppDelegate.swift,
+				Assets.xcassets,
+				Model/User.swift,
+				SceneDelegate.swift,
+				Service/APIManager.swift,
+				Service/UserService.swift,
+				View/UserViewController.swift,
+				ViewModel/UserViewModel.swift,
+				ViewModel/UserViewModelOutput.swift,
 			);
 			target = D8473F952CB87A6C0073D9B6 /* ProtocolOrientedUIKit */;
+		};
+		D86D44DC2CB9B6070078CA2A /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKitUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: LaunchScreen.storyboard",
+				AppDelegate.swift,
+				Assets.xcassets,
+				Info.plist,
+				Model/User.swift,
+				SceneDelegate.swift,
+				Service/APIManager.swift,
+				Service/UserService.swift,
+				View/UserViewController.swift,
+			);
+			target = D8473FB52CB87A6D0073D9B6 /* ProtocolOrientedUIKitUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D8473F982CB87A6C0073D9B6 /* ProtocolOrientedUIKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				D8473FBE2CB87A6D0073D9B6 /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKit" target */,
-			);
-			path = ProtocolOrientedUIKit;
-			sourceTree = "<group>";
-		};
 		D8473FAF2CB87A6D0073D9B6 /* ProtocolOrientedUIKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ProtocolOrientedUIKitTests;
@@ -56,6 +72,15 @@
 		D8473FB92CB87A6D0073D9B6 /* ProtocolOrientedUIKitUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ProtocolOrientedUIKitUITests;
+			sourceTree = "<group>";
+		};
+		D86D44D32CB9B6070078CA2A /* ProtocolOrientedUIKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D86D44DB2CB9B6070078CA2A /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKit" target */,
+				D86D44DC2CB9B6070078CA2A /* Exceptions for "ProtocolOrientedUIKit" folder in "ProtocolOrientedUIKitUITests" target */,
+			);
+			path = ProtocolOrientedUIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,7 +113,7 @@
 		D8473F8D2CB87A6C0073D9B6 = {
 			isa = PBXGroup;
 			children = (
-				D8473F982CB87A6C0073D9B6 /* ProtocolOrientedUIKit */,
+				D86D44D32CB9B6070078CA2A /* ProtocolOrientedUIKit */,
 				D8473FAF2CB87A6D0073D9B6 /* ProtocolOrientedUIKitTests */,
 				D8473FB92CB87A6D0073D9B6 /* ProtocolOrientedUIKitUITests */,
 				D8473F972CB87A6C0073D9B6 /* Products */,
@@ -119,9 +144,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D8473F982CB87A6C0073D9B6 /* ProtocolOrientedUIKit */,
 			);
 			name = ProtocolOrientedUIKit;
 			packageProductDependencies = (
@@ -168,6 +190,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D8473FB92CB87A6D0073D9B6 /* ProtocolOrientedUIKitUITests */,
+				D86D44D32CB9B6070078CA2A /* ProtocolOrientedUIKit */,
 			);
 			name = ProtocolOrientedUIKitUITests;
 			packageProductDependencies = (
@@ -294,7 +317,6 @@
 				INFOPLIST_FILE = ProtocolOrientedUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +344,6 @@
 				INFOPLIST_FILE = ProtocolOrientedUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
